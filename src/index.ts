@@ -1,7 +1,7 @@
 import express,{Response,Request} from 'express'
 import dotenv from 'dotenv'
-import { connectDB } from "../config/connectDB";
-import router from '../router/userAuthentication'
+import { connectDB } from "./config/connectDB";
+import router from './router/userAuthentication'
 
 dotenv.config({path:"./config.env"})
 const port:number=Number(process.env.PORT)
